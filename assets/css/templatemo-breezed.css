@@ -537,7 +537,7 @@ header
   height: 40px;
   text-indent: -9999em;
   z-index: 99;
-  right: 40px;
+  right: 1px;
   display: none;
 }
 
@@ -1610,7 +1610,7 @@ portfolio
 }
 #projects .filters-content .show {
   opacity: 1;
-  visibility: visible;
+  visibility:visible;
   transition: all 350ms;
 }
 #projects .filters-content .hide {
