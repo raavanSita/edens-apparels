@@ -4,402 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="slidetest.css">
+
     <script src="slidetest.js"></script>
+
+    <link rel="stylesheet" href="test2.css">
+    
+    <script src="test2.js"></script>
+
 </head>
 <body>
-    <div class="mySlides">
-        <div class="numbertext">1 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg" style="width:100%">
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <div id="myBtnContainer"></div>
+            <li><button class="btn active" onclick="filterSelection('all')"> Show all</button></li>
+            <li><button class="btn" onclick="filterSelection('nature')"> school uniforms</button></li>
+            <li><button class="btn" onclick="filterSelection('cars')">corporate uniforms</button></li>
+            <li><button class="btn" onclick="filterSelection('people')"> hotels and spa uniforms</button></li>
+        </div>
+        </ul>
       </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-004.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">3 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-005.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">4 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-010.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">5 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-018.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-019.jpg" style="width:100%">
-      </div>
-    
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-      <!-- Image text -->
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-    
-      <!-- Thumbnail images -->
+
+      
+      <button class="openbtn" onclick="openNav()">&#9776; UNIFORMS</button> 
+
       <div class="row">
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        <div class="column nature">
+          <div class="content">
+            <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg" alt="Mountains" style="width:100%">
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
         </div>
-        <div class="column"> 
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-004.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+        <div class="column nature">
+          <div class="content">
+            <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-004.jpg" alt="Lights" style="width:100%">
+            <h4>Lights</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
         </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-005.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        <div class="column nature">
+          <div class="content">
+            <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-005.jpg" alt="Nature" style="width:100%">
+            <h4>Forest</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
         </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-010.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      
+        <div class="column cars">
+          <div class="content">
+            <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-010.jpg" alt="Car" style="width:100%">
+            <h4>Retro</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
         </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-018.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-        </div> 
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-019.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        <div class="column cars">
+          <div class="content">
+            <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-018.jpg" alt="Car" style="width:100%">
+            <h4>Fast</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
         </div>
+        <div class="column cars">
+          <div class="content">
+            <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-019.jpg" alt="Car" style="width:100%">
+            <h4>Classic</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+      
+        <div class="column people">
+          <div class="content">
+            <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+            <h4>Girl</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+            <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+            <h4>Man</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+            <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+            <h4>Woman</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+      <!-- END GRID -->
       </div>
-    </div>
+      
 </body>
 </html>
-
-<section class="section" id="projects">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="section-heading">
-                    <h6>UNIFORMS</h6>
-                    <h2>CATAGORY</h2>
-                </div>
-
-                <div class="filters position-sticky mt-1 active" style="top:80px; z-index: 10px;">
-                    <ul>
-                        <li data-filter=".dev">Hospital Uniforms</li>
-                        <li data-filter=".gra">Corperate Uniforms</li>
-                        <li data-filter=".des">School Uniforms</li>
-                        <li data-filter=".tsh">Resturent and Spa Uniform</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-9">
-                <div class="filters-content">
-                    <div class="row grid">
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 all des">
-                            <div class="item" >
-                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 all des">
-                            <div class="item">
-                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-004.jpg"
-                                    data-lightbox="" data-title="Our Projects"><img
-                                        src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-004.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 all des">
-                            <div class="item">
-                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-005.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-005.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 all des">
-                            <div class="item">
-                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-010.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-010.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 all des">
-                            <div class="item">
-                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-018.jpg" data-lightbox="
-                                    image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-018.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 all des">
-                            <div class="item">
-                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-019.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-019.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-
-                        <!--
-                        hotels
-                    -->
-
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all tsh">
-                            <div class="item">
-                                <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-001.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-001.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all tsh">
-                            <div class="item">
-                                <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-003.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-003.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all tsh">
-                            <div class="item">
-                                <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-004.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-004.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all tsh">
-                            <div class="item">
-                                <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-008.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-008.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all tsh">
-                            <div class="item">
-                                <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-009.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-009.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all tsh">
-                            <div class="item">
-                                <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-010.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-010.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-
-                        <!--
-                          corperate
-                      -->
-
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all gra">
-                            <div class="item">
-                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all gra">
-                            <div class="item">
-                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-002.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-002.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all gra">
-                            <div class="item">
-                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-003.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-003.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all gra">
-                            <div class="item">
-                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-006.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-006.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all gra">
-                            <div class="item">
-                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-007.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-007.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6   col-12 all gra">
-                            <div class="item">
-                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-008.jpg"
-                                    data-lightbox="image-1" data-title="Our Projects"><img
-                                        src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-008.jpg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ***** Projects Area Ends ***** -->
-
-<!-- ***** Testimonials Starts ***** -->
-<section class="section" id="testimonials">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h6>EDENS APPARELS</h6>
-                    <h2>OUR TOP BRANDS</h2>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 mobile-bottom-fix-big"
-                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                <div class="owl-carousel owl-theme">
-                    <div class="item author-item">
-                        <div class="member-thumb">
-                            <img src="https://pbs.twimg.com/profile_images/996449969304317952/h85r5jpj_400x400.jpg"
-                                alt="">
-                            <div class="hover-effect">
-                                <div class="hover-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h4>LOUIS PHILIPPE</h4>
-                        <span>SUITS</span>
-                    </div>
-                    <div class="item author-item">
-                        <div class="member-thumb">
-                            <img src="https://i.pinimg.com/originals/23/7c/9a/237c9ad63c3168c73f1f23684049a529.png"
-                                alt="">
-                            <div class="hover-effect">
-                                <div class="hover-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h4>Allen Solly</h4>
-                        <span>SHIRTS</span>
-                    </div>
-                    <div class="item author-item">
-                        <div class="member-thumb">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/51m%2BVcLdgtL._SL1253_.jpg"
-                                alt="">
-                            <div class="hover-effect">
-                                <div class="hover-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h4>Van Heusen</h4>
-                        <span>SHIRTS</span>
-                    </div>
-                    <div class="item author-item">
-                        <div class="member-thumb">
-                            <img src="https://www.nextbigbrand.in/wp-content/uploads/2019/11/Peter-England-Logo-Png-Free-Download.png"
-                                alt="">
-                            <div class="hover-effect">
-                                <div class="hover-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h4>Peter England</h4>
-                        <span>SHIRTS AND PANTS</span>
-                    </div>
-                    <div class="item author-item">
-                        <div class="member-thumb">
-                            <img src="https://images.assettype.com/afaqs%2Fimport%2Fall%2Fnews%2Fimages%2Fnews_story_grfx%2F2018%2F04%2F52776%2FBlackberrys.jpg?auto=format%2Ccompress&w=1200"
-                                alt="">
-                            <div class="hover-effect">
-                                <div class="hover-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h4>Blackberrys</h4>
-                        <span>CLOTHING METERIALS</span>
-                    </div>
-
-                    <div class="item author-item">
-                        <div class="member-thumb">
-                            <img src="https://i.pinimg.com/originals/cf/43/b1/cf43b15c7ba9e3517f41ef27b6c26e03.jpg"
-                                alt="">
-                            <div class="hover-effect">
-                                <div class="hover-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h4>Calvin Klein</h4>
-                        <span>T-SHIRTS AND INNERS</span>
-                    </div>
-
-                    <div class="item author-item">
-                        <div class="member-thumb">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Lee_logo.svg/1200px-Lee_logo.svg.png"
-                                alt="">
-                            <div class="hover-effect">
-                                <div class="hover-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h4>LEE</h4>
-                        <span>JEANS AND SHORTS</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>

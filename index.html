@@ -25,7 +25,12 @@
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
     <link rel="stylesheet" href="slidetest.css">
+
     <script src="slidetest.js"></script>
+
+    <link rel="stylesheet" href="test2.css">
+
+    <script src="test2.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -109,7 +114,7 @@
 
                 <div class="embed-responsive embed-responsive-16by9">
                     <video autoplay="" muted="" loop="" playsinline="" id="vid" preload="auto" width="100%"
-                        height="100%"> 
+                        height="100%">
                         <source src="intro.mp4" type="video/mp4">
                     </video>
                     <div class="overlay">
@@ -239,68 +244,205 @@
     </section>
     <!-- ***** Features Big Item End ***** -->
 
+
+
     <!-- ***** Projects Area Starts ***** -->
-    <div class="mySlides">
-        <div class="numbertext">1 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-004.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">3 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-005.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">4 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-010.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">5 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-018.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-          <img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-019.jpg" style="width:100%">
-      </div>
-    
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-      <!-- Image text -->
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-    
-      <!-- Thumbnail images -->
-      <div class="row">
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div class="section-heading ">
+                        <h6>UNIFORMS</h6>
+                        <h2>CATAGORY</h2>
+                    </div>
+
+                    <div id="mySidepanel" class="sidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <ul>
+                            <div id="myBtnContainer"></div>
+
+                            <li><button class="btn" onclick="filterSelection('school')"> school uniforms</button></li>
+                            <li><button class="btn" onclick="filterSelection('cor')">corporate uniforms</button></li>
+                            <li><button class="btn" onclick="filterSelection('hotel')">hotels and spa uniforms</button></li>
+                        </ul>
+                    </div>
+
+
+
+
+                    <button class="openbtn" onclick="openNav()">&#9776; UNIFORMS</button>
+
+                    <div class="row">
+                        <div class="column school">
+                            <div class="content">
+                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg"  alt="Lights" style="width:100%"></a>
+                                
+                                
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                            
+                        </div>
+                        <div class="column school">
+                            <div class="content">
+                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg"  alt="Lights" style="width:100%"></a>
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column school">
+                            <div class="content">
+                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-002.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg"  alt="Lights" style="width:100%"></a>
+                                <h4>blahhh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+
+                        <div class="column school">
+                            <div class="content">
+                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-003.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg"  alt="Lights" style="width:100%"></a>
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column school">
+                            <div class="content">
+                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-006.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg"  alt="Lights" style="width:100%"></a>
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column school">
+                            <div class="content">
+                                <a href="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-007.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-001.jpg"  alt="Lights" style="width:100%"></a>
+                                <h4>blahhh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column cor">
+                            <div class="content">
+                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg" data-lightbox="image-1" data-title="cooperate uniforms"><img src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column cor">
+                            <div class="content">
+                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-002.jpg" data-lightbox="image-1" data-title="cooperate uniforms"><img src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column cor">
+                            <div class="content">
+                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-003.jpg" data-lightbox="image-1" data-title="cooperate uniforms"><img src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+
+                        <div class="column cor">
+                            <div class="content">
+                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-006.jpg" data-lightbox="image-1" data-title="cooperate uniforms"><img src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column cor">
+                            <div class="content">
+                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-007.jpg" data-lightbox="image-1" data-title="cooperate uniforms"><img src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column cor">
+                            <div class="content">
+                                <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-008.jpg" data-lightbox="image-1" data-title="cooperate uniforms"><img src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                <h4>blahh</h4>
+                                <p>Lorem ipsum dolor..</p>
+                            </div>
+
+                            <div class="column cor">
+                                <div class="content">
+                                    <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-009.jpg" data-lightbox="image-1" data-title="cooperate uniforms"><img src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                    <h4>blahh</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                </div>
+                            </div>
+                            <div class="column cor">
+                                <div class="content">
+                                    <a href="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-010.jpg" data-lightbox="image-1" data-title="cooperate uniforms"><img src="assets/EDENS COOPERTATE (reduced size)/EDENS COOPERTATE (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                    <h4>blahh</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column hotel">
+                                <div class="content">
+                                    <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-001.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                    <h4>blahh</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                </div>
+                            </div>
+                            <div class="column hotel">
+                                <div class="content">
+                                    <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-003.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                    <h4>bllahhh</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                </div>
+                            </div>
+                            <div class="column hotel">
+                                <div class="content">
+                                    <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-004.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                    <h4>blahh</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                </div>
+                            </div>
+
+                            <div class="column hotel">
+                                <div class="content">
+                                    <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-005.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                    <h4>blahh</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                </div>
+                            </div>
+                            <div class="column hotel">
+                                <div class="content">
+                                    <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-006.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                    <h4>bllahhh</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                </div>
+                            </div>
+                            <div class="column hotel">
+                                <div class="content">
+                                    <a href="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-007.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/EDENS HOTELS (reduced size)/EDENS HOTELS (reduced size)-page-001.jpg" alt="" style="width:100%"></a>
+                                    <h4>blahh</h4>
+                                    <p>Lorem ipsum dolor..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END GRID -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="column"> 
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-004.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-005.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-010.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-018.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-        </div> 
-        <div class="column">
-          <img class="demo cursor" src="assets/EDENS SCHOOL (reduced size)/EDENS SCHOOL (reduced size)-page-019.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-        </div>
-      </div>
+    </section>
+
+
+
+
+
+
+
     <!-- ***** Testimonials Ends ***** -->
+
+
+
+
 
     <!-- ***** Contact Us Area Starts ***** -->
     <section class="section" id="contact-us">

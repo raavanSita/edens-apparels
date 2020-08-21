@@ -1,86 +1,52 @@
-* {
-    box-sizing: border-box;
+/* The sidepanel menu */
+.sidepanel {
+    height: 40vh; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position:absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 80px;
+    left: 0;
+    background-color:none; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
   }
   
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
   }
   
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
   }
   
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
     position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
+    top: 5px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 60px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
     font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
+    cursor: pointer;
+    background-color: #111;
     color: white;
+    padding: 10px 15px;
+    border: none;
   }
   
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
+  .openbtn:hover {
+    background-color: #444;
   }
